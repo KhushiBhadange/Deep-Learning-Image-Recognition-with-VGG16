@@ -21,7 +21,7 @@ After the convolutional blocks, VGG16 has three fully connected layers.
 These FC layers are responsible for making the final predictions.
 The first two FC layers have 4,096 neurons each, and the third FC layer has the same number of neurons as the number of classes in the classification task.
 
-*Activation Function:
+* Activation Function:
 Rectified Linear Unit (ReLU) activation functions are used after each convolutional and fully connected layer.
 
 * Output Layer:
