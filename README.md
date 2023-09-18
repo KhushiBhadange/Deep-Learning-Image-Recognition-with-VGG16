@@ -9,36 +9,29 @@
 The VGG16 architecture is a specific convolutional neural network (CNN) architecture for image classification tasks. It was developed by the Visual Geometry Group (VGG) at the University of Oxford and gained prominence in the field of deep learning due to its simplicity and effectiveness. Here's an overview of the VGG16 architecture:
 
 * Input Layer:
-
 The input layer accepts images of a fixed size, typically 224x224 pixels.
 
 * Convolutional Layers (Block 1-5):
-
 VGG16 consists of five convolutional blocks, each containing multiple convolutional layers.
 Each convolutional layer uses a small 3x3 kernel with a stride of 1 and same padding.
 After each convolutional block, there is a max-pooling layer (2x2 window with a stride of 2) to reduce spatial dimensions.
 
 * Fully Connected Layers (FC Layers):
-
 After the convolutional blocks, VGG16 has three fully connected layers.
 These FC layers are responsible for making the final predictions.
 The first two FC layers have 4,096 neurons each, and the third FC layer has the same number of neurons as the number of classes in the classification task.
 
 *Activation Function:
-
 Rectified Linear Unit (ReLU) activation functions are used after each convolutional and fully connected layer.
 
 * Output Layer:
-
 The output layer typically uses softmax activation to produce class probabilities for multi-class classification tasks.
 
 * Parameters:
-
 VGG16 has a relatively large number of parameters, mainly due to the deep and uniform architecture.
 The specific number of parameters depends on the dataset and whether the model is fine-tuned.
 
 * Pre-Trained Weights:
-
 VGG16 is often used as a pre-trained model. It has been trained on large datasets like ImageNet, making it capable of recognizing a wide range of features in images.
 
 ## Key Components and Details: 
